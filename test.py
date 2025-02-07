@@ -1,3 +1,15 @@
+mystery = 0
+surprise = 5
+guess = 1
+print(mystery, surprise, guess)
+for i in range(4):
+    mystery = guess + surprise
+    surprise = mystery - i + guess
+    guess = guess * 2
+print(mystery, surprise, guess)
+
+print(15/4)
+
 '''my_list = []
 
 for num in range(5):
@@ -16,7 +28,7 @@ for i in range(0,20,2):
 print(list_of_values)
 '''
 
-
+'''
 user_age = [10,15,21,67,12,18,65]
 membership_type = ['PART TIME','FULL', 'PART TIME','FULL', 'FULL', 'PART TIME','FULL']
 cost = [100, 120, 250, 60, 300, 150, 200]
@@ -39,17 +51,6 @@ for i in range (7):
     disc_amount += [cost[i] * discount[i] / 100]
     price += [cost[i] - cost[i] * discount[i] / 100]
     print('membership will cost you £' + str(cost[i]),'-', disc_amount[i], 'price =' ,price[i],  ' discount was=', discount[i], '% £',disc_amount[i])
-
-
-
-'''mystery = 0
-surprise = 5
-guess = 1
-for i in range(4):
-    mystery = guess + surprise
-    mystery = mystery - i + guess
-    guess = guess * 2
-print(mystery, guess, surprise)
 '''
 
 
@@ -57,13 +58,27 @@ print(mystery, guess, surprise)
 
 
 
-'''sum = 0
+
+'''
+sum = 0
 average = 0
 for count in range(5):
     sum = sum + count
-print (sum)
-print (count)
+    print(' count=', count, 'sum=',sum)
 average = sum/count
-print(average)
+print('average=',average)
 '''
 
+'''
+x = 5
+k= 10
+sum = 45
+print('x=', x, ' k=',k, 'sum=', sum)
+while sum < 75 :
+    print('sum < 75 - yes')
+    sum = sum+k
+    
+    k= k+x
+    print('x=', x, ' k=',k, 'sum=', sum)
+print('sum = ', sum)
+'''
